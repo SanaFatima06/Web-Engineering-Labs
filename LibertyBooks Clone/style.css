@@ -1,0 +1,268 @@
+/* basic reset + box-sizing */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* base typography + background */
+:root {
+  --page-bg: #ffffff;
+  --text-color: #111;
+  --accent: #c62828; /* example color (Liberty uses warm reds) */
+}
+html, body {
+  height: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--page-bg);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* add small helper so sections don't stick to the very top during development */
+main { padding: 1rem; }
+
+/* ===== Header Styles ===== */
+
+/* Top bar */
+.top-bar {
+  background: #c62828;       /* LibertyBooks red shade */
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 1rem;
+  display: flex;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.header-icons a {
+  margin-left: 1rem;
+  color: #111;
+  text-decoration: none;
+}
+
+/* Navigation Menu */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.main-nav li {
+  margin: 0 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+/* ===== Hero Banner Slider ===== */
+.hero-banner {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Hide radio buttons */
+.hero-banner input[type=radio] {
+  display: none;
+}
+
+/* Slides wrapper */
+.slides {
+  display: flex;
+  width: 100%; /* 3 slides = 300% */
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+
+/* Each slide */
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Controls (the dots under slider) */
+.controls {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.controls label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.controls label:hover {
+  background: #c62828; /* active color */
+}
+
+/* Slide movement depending on which radio is checked */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* ===== Featured Row ===== */
+.featured-row {
+  padding: 40px 5%;
+}
+
+.featured-row h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-left: 5px solid #c62828;
+  padding-left: 10px;
+}
+
+.book-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.book-card img {
+  width: 70%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.book-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.book-card .price {
+  color: #c62828;
+  font-weight: bold;
+}
+.book-card button {
+  margin-top: 8px;
+  background: #c62828;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.book-card button:hover {
+  background: #b71c1c;
+}
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+/* ===== Footer ===== */
+.site-footer {
+  background: #333;
+  color: #ddd;
+  padding: 40px 5% 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #c62828;
+}
+
+.footer-col p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+
