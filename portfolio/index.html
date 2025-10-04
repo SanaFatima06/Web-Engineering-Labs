@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome (Add this line here) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container justify-content-center">
+    <a class="navbar-brand me-5" href="#">Sana Fatima</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center text-center bg-light vh-100">
+  <div class="container">
+    <h1 class="display-3 fw-bold hero-title" data-aos="zoom-in">Hi, I'm Sana Fatima</h1>
+    <p class="lead mb-4 hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+      A Computer Science student
+    </p>
+    <div data-aos="fade-up" data-aos-delay="400">
+     <a href="#portfolio" class="btn btn-green btn-lg me-3">View Projects</a>
+<a href="#contact" class="btn btn-outline-green btn-lg">Contact Me</a>
+
+    </div>
+    <i class="fa-solid fa-angles-down fa-bounce mt-5 fs-2 text-secondary"></i>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left side: Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="ME.jpg" alt="Sana Fatima" class="img-fluid rounded-circle shadow-lg" width="250">
+      </div>
+
+      <!-- Right side: Bio -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3 text-blue">About Me</h2>
+        <p class="lead">
+          Currently pursuing Bachelor of Computer Science from Bahria University Karachi. Passoionate about learning Generative Ai and Machine learning along with web development, design, and technology.
+          I love building creative projects that combine logic and aesthetics.
+        </p>
+
+        <h4 class="mt-4 mb-3 text-blue">Skills</h4>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge bg-blue text-white">HTML</span>
+          <span class="badge bg-blue text-white">CSS</span>
+          <span class="badge bg-blue text-white">Bootstrap</span>
+          <span class="badge bg-blue text-white">Java</span>
+          <span class="badge bg-blue text-white">Python</span>
+          <span class="badge bg-blue text-white">c++</span>
+
+          <span class="badge bg-blue text-white">Excel</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Education Section -->
+<section id="education" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-5 text-blue text-center">Education</h2>
+
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-5 mb-4">
+        <div class="card shadow-sm border-0 edu-card">
+          <div class="card-body">
+            <h5 class="card-title text-blue fw-bold">Bachelor of Science in Computer Science</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Bahria University Karachi | 2023 - Present</h6>
+            <p class="card-text">
+              Currently pursuing a degree in Computer Science, building strong foundations in programming, web development, and problem-solving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-5 mb-4">
+        <div class="card shadow-sm border-0 edu-card">
+          <div class="card-body">
+            <h5 class="card-title text-blue fw-bold">Intermediate in Pre-Medical</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Govt Girls Degree College Shaikh Zaid Center | 2019 - 2021</h6>
+            <p class="card-text">
+              Focused on physics and developed analytical and technical thinking skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5 text-blue">My Projects</h2>
+
+    <div class="row justify-content-center">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 project-card">
+          <img src="project1.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title text-blue fw-bold">Railway Reservation System</h5>
+            <p class="card-text">
+              A Java and SQL-based railway seat reservation system with a graphical interface.
+            </p>
+            <a href="#" class="btn btn-outline-green btn-sm me-2"><i class="fa-brands fa-github me-1"></i>View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 project-card">
+          <img src="project2.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title text-blue fw-bold">Liberty Books Clone</h5>
+            <p class="card-text">
+              A responsive Liberty Books Clone website using html and css.
+            </p>
+            <a href="#" class="btn btn-outline-green btn-sm me-2"><i class="fa-brands fa-github me-1"></i>View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 project-card">
+          <img src="project3.PNG" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-blue fw-bold">J.K. Rowling & The Harry Potter Series</h5>
+            <p class="card-text">
+A simple webpage about the Harry Potter book series by J.K. Rowling. </p>
+            <a href="#" class="btn btn-outline-green btn-sm me-2"><i class="fa-brands fa-github me-1"></i>View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3 text-blue">Contact</h2>
+    <p class="mb-4">You can reach me at:</p>
+
+    <p class="fs-5 mb-2">
+      <i class="fa-solid fa-envelope me-2 text-blue"></i>
+      <a href="mailto:sanafatima0613@gmail.com" class="text-decoration-none text-blue">sanafatima0613@gmail.com</a>
+    </p>
+
+    <p class="fs-5">
+      <i class="fa-brands fa-github me-2 text-blue"></i>
+      <a href="https://github.com/SanaFatima06" target="_blank" class="text-decoration-none text-blue">https://github.com/SanaFatima06</a>
+    </p>
+  </div>
+</section>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
