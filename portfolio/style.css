@@ -1,0 +1,166 @@
+/*  Global Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/*  Navbar Styling */
+.navbar-custom {
+  background-color: #113e63; /* maroon background */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #f5f5f5; /* soft white text */
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .navbar-brand:hover {
+  color: #39649c; /* gold hover color */
+}
+/*  Hero Section Styling */
+.hero-title {
+  color: #113e63;
+  text-shadow: 0px 0px 10px rgba(206, 203, 184, 0.4); /* faint gold glow */
+}
+
+
+.hero-subtitle {
+  color: #113e63; /* soft grey for contrast */
+  font-size: 1.3rem;
+}
+
+#hero {
+  background-color: #fff9f5; /* very light beige/pink background */
+}
+
+/*  Custom Buttons */
+.btn-green {
+  background-color: #113e63;   /* maroon background */
+  color: #fff;                 /* white text */
+  border: 2px solid #113e63;
+  transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #39649c;   /* lighter maroon on hover */
+  border-color: #39649c;
+  color: #e7e5dd;              /* gold text on hover */
+}
+
+.btn-outline-green {
+  background-color: transparent;
+  color: #113e63;
+  border: 2px solid #113e63;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-green:hover {
+  background-color: #113e63;
+  color: #e7e5dd;              
+}
+/* 💙 About Section */
+/* 💙 About Section Heading */
+#about h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* bold */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #113e63;
+}
+
+.text-blue {
+  color: #113e63;
+}
+
+.bg-blue {
+  background-color: #113e63;
+}
+
+/* 🎓 Education Section */
+#education {
+  background-color: #f0f6fc;
+}
+
+.edu-card {
+  background-color: #fff;
+  border-left: 5px solid #113e63; /* Blue accent line */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(17, 62, 99, 0.2);
+}
+
+#education h2 {
+  position: relative;
+  display: inline-block;
+}
+
+#education h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #39649c;
+  border-radius: 2px;
+}
+/* 💻 Portfolio Section */
+#portfolio {
+  background-color: #fff;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #113e63;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(17, 62, 99, 0.2);
+}
+
+#portfolio h2 {
+  position: relative;
+  display: inline-block;
+}
+
+#portfolio h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #39649c;
+  border-radius: 2px;
+}
+/* 💌 Minimal Contact Section */
+#contact {
+  background-color: #f0f6fc;
+}
+
+#contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #39649c;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+#contact a {
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #39649c;
+}
+
+
+
